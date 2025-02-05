@@ -1,85 +1,229 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Sora;
+}
+
+.navbar-color {
+    background-color: rgb(5, 12, 23);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: rgb(5, 12, 23);
-    border-bottom: 1px solid #ddd;
+    height: 100px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
+    font-weight: bold;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: 
+    color: white;
     font-size: 16px;
+    display: flex;
+    align-items: center;
 }
+
+.button {
+    background-color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gray-text {
+    color: #7780a1;
+}
+
+
+ .wrapper {
+    width: 100vw;
+    max-width: 1500px;
+    margin: auto;
+        /* padding: 0 30px */
+ }
 
 
 .nav-links a:hover {
     color: #007bff;
 }
 
-div.box{
+div.box {
     display: flex;
     /* padding: 20px; */
-    background-color: black;
     width: 100%;
-    height: 500px;
-    
+    height: 70vh;
 }
 
-div.right-box{
-    flex: 1;
-    background-color: rgb(221, 157, 101)
-}
-div.left-box{
+.right-box {
     display: flex;
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    width: 40%;
+    right: 0px;
+}
+
+div.innter-right {
     flex: 1;
-    background-color:white;
-    border: 1px solid grey;
-   flex-direction: row;
+    background-color: #fdc124;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+div.innter-right::before {
+    content: "";
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgb(168, 96, 212);
+    background: radial-gradient(circle, rgba(168, 96, 212, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+div.left-box {
+    display: flex;
+    flex: 1.2;
+    background-color: white;
+    flex-direction: row;
     margin: 0;
     padding: 0;
+    max-width: 50%;
+}
+
+.main-text {
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.innerleft {
+    /* height: calc(100%-10px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 
-
-
-
-div.innerleft{
-    border: 2px solid black;
-    /* margin: 60px; */
-    padding: 96px;
-    height: calc(100%-10px);
-    
+.intro {
+    line-height: 30px;
 }
 
+.hireme {
+    background-color: #9947fd;
+    color: white;
+    padding: 20px;
+    transition: 0.4s;
+}
 
+.hireme:hover {
+    background-color: #c28fff;
+}
 
-div.hi{
+.cv {
+    transition: 0.4s;
+    padding: 20px;
+    border: #e0e0e0 solid 2px;
+}
+
+.intro-button {
+    display: flex;
+    gap: 20px;
+}
+
+.cv:hover {
+    background-color: black;
+    color: white;
+}
+
+.chip {
     background-color: rgba(255, 196, 31, 0.14);
-    border: 1px solid yellow;
-    color: rgb(255, 220, 121);
-    
+    color: #ffc420;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 8px;
 }
 
-img.img{
-    width: 100px;
+img.img {
+    position: absolute;
+    height: 90%;
+    bottom: 0px;
     align-items: center;
+    z-index: 10;
+}
+
+/* ///////////// experience ////// */
+.exps {
+    display: flex;
+    gap: 50px;
+}
+
+.exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.exp h1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.box2 {
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+    height: 40vh;
+    gap: 50px;
+}
+
+.btn{
+    width: 150px;
+        
+        height: 50px;
+        
+        background-color: rgb(153, 79, 245);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Space between icons */
+    margin-top: 10px;
+    /* Space from the gray-text */
 }
