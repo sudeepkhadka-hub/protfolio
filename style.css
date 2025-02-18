@@ -4,8 +4,9 @@
     font-family: Sora;
 }
 
-.navbar-color {
+/* .navbar-color {
     background-color: rgb(5, 12, 23);
+    position: fixed;
 }
 
 .navbar {
@@ -14,6 +15,24 @@
     align-items: center;
     background-color: rgb(5, 12, 23);
     height: 100px;
+} */
+
+.navbar-color {
+    background-color: rgb(5, 12, 23);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(5, 12, 23);
+    height: 100px;
+    padding: 0 20px; /* Adds some padding to the sides */
 }
 
 .logo {
@@ -53,6 +72,14 @@
     max-width: 1500px;
     margin: auto;
         /* padding: 0 30px */
+ }
+
+ .wrapper-header{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
 
 
@@ -226,4 +253,181 @@ img.img {
     /* Space between icons */
     margin-top: 10px;
     /* Space from the gray-text */
+}
+.box3{
+    background-color: rgb(5, 12, 23);
+    display: flex;
+        padding: 60px 0;
+        /* margin: 20px 0; */
+        flex-direction: column;
+        height: 40vh;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+}
+
+.conbox{
+    display: flex;
+    gap: 20px;
+width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.boxex{
+    
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 2px solid gray;
+    gap: 10px;
+}
+
+.lifebg-color{
+    background-color: rgb(5, 12, 23);
+    
+}
+
+
+.awards{
+    display: flex;
+    background-color: rgb(248, 249, 250);
+    height: 50vh;
+    padding: 96px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skills{
+    height: auto;
+    width: 100%;
+    padding: 0%;
+}
+
+
+.skillsec{
+    background-color: rgb(248, 249, 250);
+}
+
+.skills {
+    min-height: 25vh;
+    padding: 96px 0px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con1 {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    text-align: center;
+}
+
+.btn1 {
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    background-color: rgb(153, 79, 245);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn1:hover {
+    background-color: rgb(123, 49, 215);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin: 50px;
+}
+
+.icons1 {
+    /* padding: 0%; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.icons2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.figma {
+    border: 1px solid gray;
+    border-radius: 9999px;
+    height: 100px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.figma img {
+    width: 40px;
+    height: 40px;
+}
+
+.figma h1 {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.figma p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+/* @media (max-width: 768px) {
+    .icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons1 {
+        gap: 10px;
+    }
+} */
+
+
+.maincon{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 56px 0px 0px;
+}
+.maincon .boxx{
+    height: 25vh;
+     background-color: black;
+    width: 100%;
 }
