@@ -653,10 +653,22 @@ width: 100%;
         display: flex;
         flex-direction: column;
     }
+
+    .intro-button{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
     .exps{
         display: flex;
         flex-direction: column;
         gap: 0;
+        padding: 48px 0px 0px;
+    }
+    .screen{
+        width: 90%;
+        margin: auto;
     }
 
     .wrapper{
